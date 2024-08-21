@@ -50,7 +50,7 @@ body {
 }
 
 .heading_container h2 span {
-  color: #00bbf0;
+  color: #f0b311;
 }
 
 .heading_container p {
@@ -81,6 +81,7 @@ a:focus {
   outline: none !important;
   -webkit-box-shadow: none;
           box-shadow: none;
+  
 }
 
 /*header section*/
@@ -149,6 +150,10 @@ a:focus {
   color: #ffffff;
 }
 
+.navbar-logo {
+  height: 50px; /* Ajusta la altura según sea necesario */
+}
+
 .custom_nav-container {
   padding: 0;
 }
@@ -168,7 +173,7 @@ a:focus {
 }
 
 .custom_nav-container .navbar-nav .nav-item:hover .nav-link, .custom_nav-container .navbar-nav .nav-item.active .nav-link {
-  color: #00bbf0;
+  color: #f0b311;
 }
 
 .custom_nav-container .navbar-nav .nav-item.active .nav-link {
@@ -184,7 +189,7 @@ a:focus {
 }
 
 .custom_nav-container .nav_search-btn:hover {
-  color: #00bbf0;
+  color: #f0b311;
 }
 
 .custom_nav-container .navbar-toggler {
@@ -258,7 +263,7 @@ a:focus {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
-  padding: 45px 0 145px 0;
+  padding: 5px 0 25px 0;
 }
 
 .slider_section .row {
@@ -289,6 +294,16 @@ a:focus {
   font-size: 14px;
 }
 
+.slider_section .detail-box ul {
+  color: #fefefe;
+  font-size: 14px;
+}
+
+.slider_section .detail-box li {
+  color: #fefefe;
+  font-size: 14px;
+}
+
 .slider_section .detail-box .btn-box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -306,9 +321,9 @@ a:focus {
 .slider_section .detail-box .btn-box .btn1 {
   display: inline-block;
   padding: 10px 15px;
-  background-color: #00bbf0;
+  background-color: #f0b311;
   color: #ffffff;
-  border-radius: 0;
+  border-radius: 5px;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   border: none;
@@ -323,7 +338,7 @@ a:focus {
   padding: 10px 15px;
   background-color: #000000;
   color: #ffffff;
-  border-radius: 0;
+  border-radius: 5px;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   border: none;
@@ -385,7 +400,7 @@ a:focus {
 }
 
 .slider_section .carousel-indicators li {
-  background-color: #ffffff;
+  background-color: #0f054c;
   width: 12px;
   height: 12px;
   border-radius: 100%;
@@ -395,7 +410,7 @@ a:focus {
 .slider_section .carousel-indicators li.active {
   width: 20px;
   height: 20px;
-  background-color: #00bbf0;
+  background-color: #f0b311;
 }
 
 .service_section {
@@ -454,7 +469,7 @@ a:focus {
 }
 
 .service_section .box .detail-box a:hover {
-  color: #00bbf0;
+  color: #f0b311;
 }
 
 .service_section .btn-box {
@@ -470,7 +485,7 @@ a:focus {
 .service_section .btn-box a {
   display: inline-block;
   padding: 10px 45px;
-  background-color: #00bbf0;
+  background-color: #f0b311;
   color: #ffffff;
   border-radius: 0;
   -webkit-transition: all 0.3s;
@@ -512,7 +527,7 @@ a:focus {
 .about_section .detail-box a {
   display: inline-block;
   padding: 10px 45px;
-  background-color: #00bbf0;
+  background-color: #f0b311;
   color: #ffffff;
   border-radius: 0px;
   -webkit-transition: all 0.3s;
@@ -587,7 +602,7 @@ a:focus {
 .why_section .btn-box a {
   display: inline-block;
   padding: 10px 45px;
-  background-color: #00bbf0;
+  background-color: #f0b311;
   color: #ffffff;
   border-radius: 0;
   -webkit-transition: all 0.3s;
@@ -602,79 +617,101 @@ a:focus {
 /*team section */
 .team_section {
   text-align: center;
-  background-color: #00204a;
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #000000;
 }
 
 .team_section .heading_container {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 .team_section .team_container {
   padding: 0 15px;
+  flex-wrap: wrap;
 }
 
 .team_section .team_container .box {
   padding: 35px 0 0 0;
-  border-radius: 5px;
+  border-radius: 10px;
   overflow: hidden;
-  -webkit-transition: all .1s;
-  transition: all .1s;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   margin-top: 45px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#002759), to(#002b64));
-  background: linear-gradient(to bottom, #002759, #002b64);
+  background: linear-gradient(to bottom, #f8f8f9, #f8f8f9);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.team_section .team_container .box .img-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+/* Aplicar animaciones al hover en .box */
+.team_section .team_container .box:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
 }
 
+/* Animación de la imagen dentro del box */
 .team_section .team_container .box .img-box img {
-  width: 120px;
-  border-radius: 100%;
+  width: 200px;
   border: 5px solid #ffffff;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  transition: transform 0.3s ease;
 }
 
-.team_section .team_container .box .detail-box {
-  margin: 25px 0;
+/* Imagen cambia con el hover del .box */
+.team_section .team_container .box:hover .img-box img {
+  transform: scale(1.05);
 }
 
+/* Animación del texto dentro del box */
 .team_section .team_container .box .detail-box h5 {
-  color: #00bbf0;
+  color: #f0b311;
   font-weight: 600;
   position: relative;
+  transition: color 0.3s ease;
 }
 
+/* Texto cambia con el hover del .box */
+.team_section .team_container .box:hover .detail-box h5 {
+  color: #002b64;
+}
+
+.team_section h2 {
+  text-align: center;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.team_section p {
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+  margin-top: 1px;
+  transition: color 0.3s ease;
+}
+
+.team_section:hover p {
+  color: #333;
+}
+
+/* Estilo y transición de los enlaces sociales */
 .team_section .team_container .box .social_box {
   padding: 10px 45px 20px 45px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: center;
 }
 
 .team_section .team_container .box .social_box a {
-  color: #ffffff;
+  color: linear-gradient(to bottom, #002759, #002b64);
+  color: #002b64;
   font-size: 22px;
+  transition: color 0.3s ease;
 }
 
 .team_section .team_container .box .social_box a:hover {
-  color: #00bbf0;
+  color: #f0b311;
 }
 
 /*team section end*/
+
 /* client section start */
 .client_section .heading_container {
   margin-bottom: 30px;
@@ -809,7 +846,7 @@ a:focus {
 }
 
 .info_section .info_contact .contact_link_box a:hover {
-  color: #00bbf0;
+  color: #f0b311;
 }
 
 .info_section .info_social {
@@ -837,7 +874,7 @@ a:focus {
 }
 
 .info_section .info_social a:hover {
-  color: #00bbf0;
+  color: #f0b311;
 }
 
 .info_section .info_links {
@@ -864,7 +901,7 @@ a:focus {
 }
 
 .info_section .info_links a:hover {
-  color: #00bbf0;
+  color: #f0b311;
 }
 
 .info_section form input {
@@ -898,7 +935,7 @@ a:focus {
   text-align: center;
   display: inline-block;
   padding: 10px 55px;
-  background-color: #00bbf0;
+  background-color: #f0b311;
   color: #ffffff;
   border-radius: 0;
   -webkit-transition: all 0.3s;
