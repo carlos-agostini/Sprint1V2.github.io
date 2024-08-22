@@ -34,7 +34,7 @@
 }
 
 @media (max-width: 768px) {
-  .about_section .img-box {
+  .sprint1_section .img-box {
     margin-bottom: 45px;
   }
 
@@ -88,11 +88,11 @@
 }
 
 @media (max-width: 420px) {
-  .service_section .box {
+  .sprint2_section .box {
     flex-direction: column;
   }
 
-  .service_section .box .img-box {
+  .sprint2_section .box .img-box {
     justify-content: flex-start;
     margin-bottom: 15px;
   }
