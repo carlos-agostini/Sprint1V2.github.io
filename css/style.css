@@ -502,6 +502,23 @@ a:focus {
 }
 
 
+.sprint2_section .heading_container {
+  font-size: 16px;
+}
+
+.sprint2_section .heading_container a {
+  color: black;
+  text-decoration: none;
+  margin: 0 10px;
+  transition: color 0.3s ease-in-out;
+  opacity: 90%;
+}
+
+.sprint2_section .heading_container a:hover {
+  color: #007fa4;
+}
+
+
 /*sprint2 section end*/
 
 /*sprint1 section start*/
@@ -523,7 +540,15 @@ a:focus {
 }
 
 .sprint1_section .heading_container a {
-  color: #f0b311;
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 10px;
+  transition: color 0.3s ease-in-out;
+  opacity: 90%;
+}
+
+.sprint2_section .heading_container a {
+  color: black;
   text-decoration: none;
   margin: 0 10px;
   transition: color 0.3s ease-in-out;
@@ -650,6 +675,38 @@ html {
 
 .objective_section .detail-box a:hover {
   background-color: #007fa4;
+}
+
+.objective_section .table {
+  width: 100%;
+  margin-bottom: 1rem;
+  color: #212529;
+}
+
+.objective_section .table th,
+.objective_section .table td {
+  padding: 0.75rem;
+  vertical-align: top;
+  border-top: 1px solid #dee2e6;
+}
+
+.objective_section .table thead th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #dee2e6;
+}
+
+.objective_section .table-bordered {
+  border: 1px solid #dee2e6;
+}
+
+.objective_section .table-bordered th,
+.objective_section .table-bordered td {
+  border: 1px solid #dee2e6;
+}
+
+.objective_section .table-bordered thead th,
+.objective_section .table-bordered thead td {
+  border-bottom-width: 2px;
 }
 
 /*sprint1 section end*/
@@ -1151,4 +1208,68 @@ html {
 .footer_section p a {
   color: inherit;
 }
+
+/* Table Styles */
+.table {
+  width: 100%;
+  margin-bottom: 1rem;
+  color: #212529;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  padding: 0.75rem;
+  vertical-align: top;
+  border-top: 1px solid #dee2e6;
+}
+
+.table thead th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #dee2e6;
+  background-color: #f8f9fa;
+  font-weight: 500;
+}
+
+.table-bordered {
+  border: 1px solid #dee2e6;
+}
+
+.table-bordered th,
+.table-bordered td {
+  border: 1px solid #dee2e6;
+}
+
+.table-bordered thead th,
+.table-bordered thead td {
+  border-bottom-width: 2px;
+}
+
+.table-hover tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+.table-responsive {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .table-responsive {
+    border: 0;
+  }
+
+  .table-responsive .table-bordered {
+    border: 0;
+  }
+
+  .table-responsive .table-bordered th,
+  .table-responsive .table-bordered td {
+    border: 1px solid #dee2e6;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */

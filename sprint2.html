@@ -44,7 +44,7 @@
       </div>
     </div>
 
-    <!-- header section strats -->
+    <!-- header section starts -->
     <header class="header_section">
       <div class="container-fluid">
         <nav class="navbar navbar-expand-lg custom_nav-container ">
@@ -60,21 +60,18 @@
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav  ">
-              <li class="nav-item ">
+              <li class="nav-item">
                 <a class="nav-link" href="index.html">Home </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="sprint1.html"> Sprint 1</a>
+                <a class="nav-link" href="sprint1.html"> Sprint 1 </a>
               </li>
               <li class="nav-item active">
-                <a class="nav-link" href="sprint2.html">Sprint 2 <span class="sr-only">(current)</span> </a>
+                <a class="nav-link" href="sprint2.html"> Sprint 2 <span class="sr-only">(current)</span> </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="sprint3.html">Sprint 3</a>
               </li>
-              <!-- <li class="nav-item">
-                <a class="nav-link" href="team.html">Team</a>
-              </li> -->
               <form class="form-inline">
                 <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit">
                   <i class="fa fa-search" aria-hidden="true"></i>
@@ -88,86 +85,197 @@
     <!-- end header section -->
   </div>
 
-
   <!-- sprint2 section -->
 
-  <section class="sprint2_section layout_padding">
-    <div class="sprint2_container">
-      <div class="container ">
-        <div class="heading_container heading_center">
-          <h2>
-            <span>Sprint 2</span>
-          </h2>
+  <section class="sprint2_section layout_padding" style="background: white; padding-bottom: 0; padding-top: 45px;">
+    <div class="container">
+      <div class="heading_container heading_center">
+        <h2><span>Sprint 2</span></h2>
+        <p>
+          <a href="#as-is">Análisis de la situación actual (As-Is)</a> <b>|</b>
+          <a href="#proceso">Proceso BPMN</a> <b>|</b>
+          <a href="#analisis-valor">Análisis de Valor</a> <b>|</b>
+          <a href="#kpis">KPIs y Estado Actual</a> <b>|</b>
+          <a href="#conclusiones">Conclusiones</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="as-is" class="objective_section layout_padding" style="background: white; color: black;">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="img-box">
+            <img src="images/about-img.png" alt="">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="box">
+            <div class="detail-box">
+              <h3>Análisis de la situación actual (As-Is)</h3>
+              <p>
+                El objetivo de este sprint es proporcionar un entendimiento claro del estado actual del proceso, identificando tanto las actividades que agregan valor como aquellas que no lo hacen, con el fin de optimizar el flujo de trabajo y alcanzar los objetivos establecidos.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="proceso" class="objective_section layout_padding">
+    <div class="container">
+      <div class="heading_container heading_center">
+        <h2><span>Proceso BPMN</span></h2>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="img-box">
+            <img src="images/BPMN.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="analisis-valor" class="objective_section layout_padding" style="background: white;">
+    <div class="container">
+      <div class="heading_container heading_center">
+        <h2><span>Análisis de Valor</span></h2>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th><b>Actividad</b></th>
+                <th><b>Clasificación</b></th>
+                <th><b>Tiempo (Estimado)</b></th>
+                <th><b>Talento</b></th>
+                <th><b>Costo</b></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>DRMB inicia proceso de documentación</td>
+                <td>ENVA</td>
+                <td>1-2 Semanas</td>
+                <td>1 Analista de procesos</td>
+                <td>Datos insuficientes</td>
+              </tr>
+              <tr>
+                <td>DRMB analiza la iniciativa y la cataloga de acuerdo a atributos (Matriz)</td>
+                <td>VA</td>
+                <td>2-3 Semanas</td>
+                <td>1 Analista de negocios</td>
+                <td>Datos insuficientes</td>
+              </tr>
+              <tr>
+                <td>En la matriz puede clasificarse en CH, M, G</td>
+                <td>NVA</td>
+                <td>3 Horas</td>
+                <td>1 Asistente administrativo</td>
+                <td>Datos insuficientes</td>
+              </tr>
+              <tr>
+                <td>Se construye el RFP e inicia definición de requerimientos</td>
+                <td>VA</td>
+                <td>4-6 Semanas</td>
+                <td>2 Ingenieros de sistemas</td>
+                <td>Datos insuficientes</td>
+              </tr>
+              <tr>
+                <td>Se recopilan requerimientos funcionales y no funcionales</td>
+                <td>VA</td>
+                <td>1 Semana</td>
+                <td>2 Analistas de requisitos</td>
+                <td>Datos insuficientes</td>
+              </tr>
+              <tr>
+                <td>Se revisan con la guía de políticas</td>
+                <td>ENVA</td>
+                <td>1 Semana</td>
+                <td>1 Auditor de cumplimiento</td>
+                <td>Datos insuficientes</td>
+              </tr>
+              <tr>
+                <td>Con base a lo anterior, se analiza comprar, desarrollar, low code, opción interna</td>
+                <td>VA</td>
+                <td>2-4 Semanas</td>
+                <td>1 Consultor de tecnología, 1 Ingeniero de software</td>
+                <td>Datos insuficientes</td>
+              </tr>
+              <tr>
+                <td>Se libera la solución a la iniciativa</td>
+                <td>VA</td>
+                <td>1-2 Semanas</td>
+                <td>1 Ingeniero de software, 1 Gerente de proyecto</td>
+                <td>Datos insuficientes</td>
+              </tr>
+              <tr>
+                <td>Se arma el equipo de la solución y retroalimenta</td>
+                <td>ENVA</td>
+                <td>1 Semana</td>
+                <td>1 Gerente de proyecto, 1 Equipo de implementación</td>
+                <td>Datos insuficientes</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="kpis" class="objective_section layout_padding">
+    <div class="container">
+      <div class="heading_container heading_center">
+        <h2><span>KPI's y Estado Actual</span></h2>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <table class="table table-bordered" style="color: white;">
+            <thead>
+              <tr style="color:black">
+                <th><b>KPI</b></th>
+                <th><b>Estado Actual</b></th>
+                <th><b>KPIs Nuevos</b></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Tiempo de Ciclo</td>
+                <td>42 horas</td>
+                <td>Reducir a 35 horas el tiempo de ciclo en los próximos 6 meses.</td>
+              </tr>
+              <tr>
+                <td>Costo del Proceso</td>
+                <td>$1,200</td>
+                <td>Optimizar el uso de recursos reduciendo un 10% el costo del proceso en 3 meses.</td>
+              </tr>
+              <tr>
+                <td>Eficiencia del Proceso</td>
+                <td>77% VA / 23% NVA</td>
+                <td>Aumentar la eficiencia a 85% en el próximo año.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="conclusiones" class="objective_section layout_padding" style="background-color: white; color: black;">
+    <div class="container">
+      <div class="heading_container heading_center">
+        <h2><span>Conclusiones</span></h2>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
           <p>
-            There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
+            <strong>Optimización del Proceso:</strong> Enfocarse en reducir el tiempo y costo en las actividades clasificadas como NVA y ENVA.<br><br>
+            <strong>Mejoras en los KPIs:</strong> Implementar mejoras en la eficiencia y reducción de costos para alcanzar los objetivos establecidos.
           </p>
-        </div>
-        <div class="row">
-          <div class="col-md-4 ">
-            <div class="box ">
-              <div class="img-box">
-                <img src="images/s1.png" alt="">
-              </div>
-              <div class="detail-box">
-                <h5>
-                  Currency Wallet
-                </h5>
-                <p>
-                  fact that a reader will be distracted by the readable content of a page when looking at its layout.
-                  The
-                  point of using
-                </p>
-                <a href="">
-                  Read More
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 ">
-            <div class="box ">
-              <div class="img-box">
-                <img src="images/s2.png" alt="">
-              </div>
-              <div class="detail-box">
-                <h5>
-                  Security Storage
-                </h5>
-                <p>
-                  fact that a reader will be distracted by the readable content of a page when looking at its layout.
-                  The
-                  point of using
-                </p>
-                <a href="">
-                  Read More
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 ">
-            <div class="box ">
-              <div class="img-box">
-                <img src="images/s3.png" alt="">
-              </div>
-              <div class="detail-box">
-                <h5>
-                  Expert Support
-                </h5>
-                <p>
-                  fact that a reader will be distracted by the readable content of a page when looking at its layout.
-                  The
-                  point of using
-                </p>
-                <a href="">
-                  Read More
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="btn-box">
-          <a href="">
-            View All
-          </a>
         </div>
       </div>
     </div>
@@ -223,13 +331,13 @@
               Links
             </h4>
             <div class="info_links">
-              <a class="active" href="index.html">
+              <a class="" href="index.html">
                 Home
               </a>
               <a class="" href="sprint1.html">
                 Sprint 1
               </a>
-              <a class="" href="sprint2.html">
+              <a class="active" href="sprint2.html">
                 Sprint 2
               </a>
               <a class="" href="sprint3.html">
@@ -269,7 +377,7 @@
   <!-- jQery -->
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
   <!-- popper js -->
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3V9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
   </script>
   <!-- bootstrap js -->
   <script type="text/javascript" src="js/bootstrap.js"></script>
