@@ -491,7 +491,7 @@ a:focus {
   padding: 10px 45px;
   background-color: #f0b311;
   color: #ffffff;
-  border-radius: 0;
+  border-radius: 5px;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   border: none;
@@ -501,13 +501,78 @@ a:focus {
   background-color: #007fa4;
 }
 
+
+/*sprint2 section end*/
+
+/*sprint1 section start*/
+
 .sprint1_section {
   background-color: #00204a;
   color: #ffffff;
+  padding-bottom: 0;
+  padding-top: 45px;
+}
+
+.destacado {
+  font-weight: bold; /* Esto asegura que el texto sea negrita */
+  color: #f0b311; /* Establece el color del texto a amarillo */
 }
 
 .sprint1_section .heading_container {
-  margin-bottom: 45px;
+  font-size: 16px;
+}
+
+.sprint1_section .heading_container a {
+  color: #f0b311;
+  text-decoration: none;
+  margin: 0 10px;
+  transition: color 0.3s ease-in-out;
+  opacity: 90%;
+}
+
+.sprint1_section .heading_container a:hover {
+  color: #007fa4;
+}
+
+/* Dropdown container */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f0b311;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #007fa4;
+}
+
+/* Show the dropdown menu on hover */
+.dropbtn:hover + .dropdown-content {
+  display: block;
+}
+
+/* To prevent dropdown from closing too quickly */
+.dropbtn {
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+}
+
+
+/* Smooth Scroll */
+html {
+  scroll-behavior: smooth;
 }
 
 .sprint1_section .row {
@@ -543,6 +608,53 @@ a:focus {
 .sprint1_section .detail-box a:hover {
   background-color: #007fa4;
 }
+
+.objective_section {
+  background-color: #00204a;
+  color: #ffffff;
+}
+
+.objective_section .heading_container {
+  margin-bottom: 45px;
+}
+
+.objective_section .row {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.objective_section .img-box img {
+  max-width: 100%;
+}
+
+.objective_section .detail-box h3 {
+  font-weight: bold;
+}
+
+.objective_section .detail-box p {
+  margin-top: 15px;
+}
+
+.objective_section .detail-box a {
+  display: inline-block;
+  padding: 10px 45px;
+  background-color: #f0b311;
+  color: #ffffff;
+  border-radius: 0px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  border: none;
+  margin-top: 15px;
+}
+
+.objective_section .detail-box a:hover {
+  background-color: #007fa4;
+}
+
+/*sprint1 section end*/
+
+/*sprint3 section start*/
 
 .sprint3_section .box {
   margin-top: 45px;
