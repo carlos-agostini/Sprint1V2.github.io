@@ -392,6 +392,12 @@ a:focus {
   }
 }
 
+.animated-img {
+  width: 100%;
+  -webkit-animation: upDown 5s infinite;
+  animation: upDown 5s infinite;
+}
+
 .slider_section .carousel-indicators {
   position: unset;
   margin: 0;
@@ -1272,5 +1278,80 @@ html {
     border: 1px solid #dee2e6;
   }
 }
+
+/* Clase genérica para aplicar efecto hover */
+.hover-effect {
+  padding: 35px 0 0 0;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-top: 45px;
+  background: linear-gradient(to bottom, #f8f8f9, #f8f8f9);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.hover-effect h5 {
+  transition: color 0.3s ease;
+  color: black;
+  font-weight: 600;
+}
+
+.hover-effect:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.hover-effect:hover h5 {
+  color: #002b64;
+}
+
+.hover-effect .img-box img {
+  transition: transform 0.3s ease;
+}
+
+.hover-effect:hover .img-box img {
+  transform: scale(1.05);
+}
+
+.hover-effect .detail-box h5 {
+  transition: color 0.3s ease;
+  color: black;
+  font-weight: 600;
+}
+
+.hover-effect:hover .detail-box h5 {
+  color: #002b64;
+}
+
+.hover-effect p {
+  transition: color 0.3s ease;
+  color: #666;
+}
+
+.hover-effect:hover p {
+  color: #333;
+}
+
+.hover-effect .social_box a {
+  transition: color 0.3s ease;
+  color: #002b64;
+}
+
+.hover-effect:hover .social_box a {
+  color: #f0b311;
+}
+
+.hover-effect-img {
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.hover-effect-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
 
 /*# sourceMappingURL=style.css.map */
