@@ -793,6 +793,84 @@ html {
   background-color: #007fa4;
 }
 
+/*Checklist section*/
+
+
+.checklist_section {
+  background-color: #00204a;
+  color: #ffffff;
+}
+
+.checklist_section .heading_container {
+  margin-bottom: 45px;
+}
+
+.checklist_section .row {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.checklist_section .img-box img {
+  max-width: 100%;
+}
+
+.checklist_section .detail-box h3 {
+  font-weight: bold;
+}
+
+.checklist_section .detail-box p {
+  margin-top: 15px;
+}
+
+.checklist_section .detail-box a {
+  display: inline-block;
+  padding: 10px 45px;
+  background-color: #f0b311;
+  color: #ffffff;
+  border-radius: 0px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  border: none;
+  margin-top: 15px;
+}
+
+.checklist_section .detail-box a:hover {
+  background-color: #007fa4;
+}
+
+.checklist_section .table {
+  width: 100%;
+  margin-bottom: 1rem;
+  color: #212529;
+}
+
+.checklist_section .table th,
+.checklist_section .table td {
+  padding: 0.75rem;
+  vertical-align: top;
+  border-top: 1px solid #dee2e6;
+}
+
+.checklist_section .table thead th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #dee2e6;
+}
+
+.checklist_section .table-bordered {
+  border: 1px solid #dee2e6;
+}
+
+.checklist_section .table-bordered th,
+.checklist_section .table-bordered td {
+  border: 1px solid #dee2e6;
+}
+
+.checklist_section .table-bordered thead th,
+.checklist_section .table-bordered thead td {
+  border-bottom-width: 2px;
+}
+
 /* Estilos para el indicador de scroll */
 .scroll-indicator {
   position: absolute;
@@ -1352,6 +1430,114 @@ html {
   transform: scale(1.05);
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
 }
+
+/* Style for the checkbox container */
+.checkbox-container {
+  position: absolute;
+  bottom: 15px; /* Adjusted position to move it further down */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%; /* Ensure it takes the full width */
+  text-align: center; /* Center the checkbox */
+}
+
+/* Hide default checkbox */
+.custom-checkbox {
+  display: none;
+}
+
+/* Style the label to look like a circular checkbox */
+.custom-label {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #002b64; /* Border for the circle */
+  border-radius: 50%; /* Make it circular */
+  cursor: pointer;
+  position: relative;
+}
+
+/* Style when the checkbox is checked */
+.custom-checkbox:checked + .custom-label::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  background-color: #002b64; /* Fill color */
+  border-radius: 50%; /* Make it circular */
+  transform: translate(-50%, -50%);
+}
+
+.hover-effect ul li {
+  color: #666;
+  transition: color 0.3s ease;
+  font-size: 1em;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.hover-effect:hover ul li {
+  color: #333;
+}
+
+
+/* Estilo del contador de checkboxes en la sección checklist */
+.checklist_section .checkbox-counter {
+  position: absolute;
+  top: 20px; /* Ajuste de la posición superior dentro de la sección */
+  right: 20px; /* Ajuste de la posición derecha dentro de la sección */
+  background-color: #f8f8f9; /* Fondo blanco */
+  color: black;
+  padding: 10px 15px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  font-weight: bold;
+  z-index: 1000; /* Asegura que el contador esté por encima de otros elementos */
+}
+
+/* Estilo específico para mantener el contador dentro de la sección */
+.checklist_section {
+  position: relative;
+}
+
+
+
+/* Ajustes para el comportamiento del contador al desplazarse */
+@media (max-width: 768px) {
+  .checkbox-counter {
+    top: 10px;
+    right: 10px;
+    padding: 8px 12px;
+  }
+}
+
+/* Estilo del botón */
+.btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  margin-top: 20px;
+  border: none; /* Asegura que no haya borde predeterminado */
+}
+
+/* Estado desactivado */
+.btn.disabled {
+  background-color: grey;
+  pointer-events: none;
+}
+
+/* Estado activado */
+.btn-primary {
+  background-color: #f0b311;
+}
+
+
+
 
 
 /*# sourceMappingURL=style.css.map */
